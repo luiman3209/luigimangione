@@ -4,24 +4,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post Title 1</title>
+    <title>Luigi Mangione - Kickstarting My Web App Development: Speedrunning with GPT-4o</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1>Post Title 1</h1>
+            <div class="header-left">
+                <img src="assets/img/white-logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#posts">Posts</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><button class="resume-button"><a href="./assets/files/luigi_mangione_cv.pdf" target="_blank"
+                                    download="luigi_mangione_cv.pdf">Resume</a></button></li>
+
+
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
         <div class="container">
             <section>
-                <h2>Post Title 1</h2>
-                <p>Date: January 1, 2024</p>
-                <p>This is the full content of the first blog post. Here you can write all the details and information
-                    you want to share about this topic.</p>
+                <h1>Kickstarting My Web App Development: Speedrunning with ChatGPT-4o</h1>
+
+                <h2>Introduction</h2>
+                <p>Hello everyone! I'm excited to share the beginning of my journey into web app development. As a
+                    software engineer, I've always been fascinated by the potential of new technologies to streamline
+                    processes and create impactful solutions. Today, I want to talk about my latest project, MyAdvisor—a
+                    platform designed to help users find financial advisors and allow advisors to register and attract
+                    new clients. With the help of ChatGPT, specifically the GPT-4o model, I've been able to speedrun the
+                    initial stages of development. Let me take you through my experience and some key insights I've
+                    gained along the way.</p>
+
+                <h2>Understanding the Concept of MyAdvisor</h2>
+
+                <h3>The Idea Behind MyAdvisor</h3>
+                <p>The idea for MyAdvisor came from recognizing a common challenge that many people face. I noticed how
+                    difficult it was for individuals to find reliable financial advice without spending hours on
+                    research. MyAdvisor aims to bridge this gap by providing a user-friendly platform where users can
+                    easily connect with certified financial advisors. Advisors, in turn, get a streamlined way to reach
+                    potential clients. The vision was clear, but the challenge was to bring this idea to life as quickly
+                    and efficiently as possible.</p>
+
+                <h3>First Step: Defining the MVP Functional Requisites</h3>
+                <p>The first step in my speedrunning journey was to define the MVP (Minimum Viable Product) functional
+                    requirements. With a tight timeline in mind, I turned to ChatGPT-4o for guidance. It was like having
+                    an expert on call 24/7, ready to provide insights and recommendations. I briefly described the kind
+                    of app I wanted to build and here’s the answer that really helped shape my approach:</p>
+                <blockquote>MVP Core Features<br>
+                    1. User Registration and Profile Management<br>
+                    User Registration/Login: Simple registration and login process for both users (investors) and
+                    financial advisors. Options for email and social media login.
+                    Profile Creation: Basic profile setup for users, including personal information, preferences, and
+                    financial goals.<br>
+                    Advisor Profile Setup: Financial advisors can create detailed profiles with their qualifications,
+                    expertise, services offered, and contact information.<br>
+                    2. Search and Discovery<br>
+                    Search Functionality: Users can search for financial advisors based on key criteria such as
+                    location, expertise, and services offered.
+                    Filter Options: Filters for refining search results (e.g., by ratings, price range, specific
+                    expertise).<br>
+                    3. Advisor Profiles<br>
+                    Detailed Profiles: Profiles of financial advisors showcasing their qualifications, experience,
+                    services, fees, and client reviews.
+                    Ratings and Reviews: Users can read and leave reviews and ratings for financial advisors based on
+                    their experiences.<br>
+                    4. Appointment Booking<br>
+                    Booking System: Users can book appointments with financial advisors directly through the platform.
+                    Calendar Integration: Basic calendar integration for advisors to manage their availability and
+                    appointments.<br>
+                    Appointment Notifications: Email or SMS notifications for appointment confirmations and reminders.
+                    5. Basic Communication Tools<br>
+                    Messaging System: Simple messaging system for users to communicate with advisors before and after
+                    booking appointments.<br>
+                    Contact Information: Display of advisor’s contact information for direct communication if needed.
+                    6. Dashboard<br>
+                    User Dashboard: Overview of user’s upcoming appointments, booked advisors, and recent activity.
+                    Advisor Dashboard: Overview of advisor’s upcoming appointments, client interactions, and profile
+                    views.<br>
+                    7. Payment Processing (Optional for MVP, but recommended)<br>
+                    Payment Integration: Basic payment processing for booking appointments (integrate with a service
+                    like Stripe or PayPal).<br>
+                    Backend and Administrative Features<br>
+                    1. Admin Panel<br>
+                    User Management: Admin interface for managing users and advisors.
+                    Content Moderation: Tools for moderating reviews and user-generated content.
+                    Analytics and Reporting: Basic analytics on user activity, bookings, and platform usage.
+                    2. Security and Privacy<br>
+                    Data Encryption: Ensure user data is encrypted and securely stored.
+                    Privacy Settings: Basic privacy settings for users and advisors to control their profile
+                    visibility.<br>
+                    Technical Stack for MVP<br>
+                    Front-End<br>
+                    Framework: React.js or Vue.js for a responsive and dynamic user interface.<br>
+                    CSS Framework: Tailwind CSS or Bootstrap for rapid UI development.<br>
+                    Back-End<br>
+                    Framework: Node.js with Express.js<br>
+                    Database: PostgreSQL<br>
+                    Authentication: JWT (JSON Web Tokens) for secure user authentication.<br>
+                    Cloud Services: AWS or Google Cloud for hosting and scalability.<br>
+                    Third-Party Integrations<br>
+                    Payment Processing: Stripe or PayPal for handling payments.<br>
+                    Calendar Integration: Google Calendar API for managing appointments.<br>
+                    Development and Testing<br>
+                    Agile Methodology: Use agile development practices to iterate quickly and incorporate feedback.<br>
+                    Basic Testing: Implement unit tests and integration tests to ensure core functionalities work as
+                    expected.<br>
+                    Launch and Feedback<br>
+                    Beta Launch: Release the MVP to a small group of users for initial feedback.<br>
+                    User Feedback: Collect feedback from beta users to identify pain points and areas for
+                    improvement.<br>
+                    Iterate and Improve: Continuously improve the platform based on user feedback and add new features
+                    over time.</blockquote>
+                <p>With this invaluable advice, I was able to outline the essential functionalities that MyAdvisor
+                    needed at launch. This included user registration, advisor profiles, search and filter capabilities,
+                    and a secure messaging system. Knowing exactly what to focus on saved me an immense amount of time.
+                </p>
+
+                <h2>Building the Foundation with ChatGPT</h2>
+
+                <h3>Database Definition</h3>
+                <p>Once the MVP was clearly defined, the next step was to design the database schema. This is where
+                    things got really exciting. Using ChatGPT, I was able to draft an initial schema that includes
+                    tables for users, advisors, appointments, reviews, and messages. Imagine having an assistant that
+                    not only understands your vision but can also help you translate it into a structured plan.</p>
+                <p>The database schema quickly took shape with ChatGPT's guidance:</p>
+                <ul>
+                    <li><strong>Users:</strong> Stores basic user information such as name, email, password (encrypted),
+                        and user role (client or advisor).</li>
+                    <li><strong>Advisors:</strong> Contains advisor-specific details like certifications, areas of
+                        expertise, and availability.</li>
+                    <li><strong>Appointments:</strong> Tracks booking details between users and advisors, including
+                        date, time, and status.</li>
+                    <li><strong>Reviews:</strong> Holds user reviews and ratings for advisors.</li>
+                    <li><strong>Messages:</strong> Manages the secure communication between users and advisors.</li>
+                </ul>
+                <p>This step was crucial, and having ChatGPT to bounce ideas off made it feel less daunting. It was like
+                    having a seasoned co-developer by my side, ensuring I didn't miss any critical elements.</p>
+
+                <h3>Backend API Definition</h3>
+                <p>With the database schema ready, it was time to move on to defining the backend API. This part of the
+                    process felt like a thrilling race against time, and ChatGPT-4 was my pit crew, providing the tools
+                    and strategies needed to keep up the pace.</p>
+                <p>The API is the backbone of MyAdvisor, enabling seamless interactions between the front end and the
+                    database. Instead of diving into specific endpoints, ChatGPT helped me understand the overall
+                    structure and best practices for creating a robust and scalable API. This included guidance on how
+                    to handle user authentication, data retrieval and updating, and secure communication between users
+                    and advisors.</p>
+                <p>Every step of the way, ChatGPT was there to ensure that I was on the right track, providing code
+                    snippets, troubleshooting advice, and even suggesting best practices. This accelerated my
+                    development process immensely. I found myself making rapid progress, something that would have taken
+                    me weeks or even months on my own.</p>
+
+                <h2>Conclusion</h2>
+                <p>Starting my journey with MyAdvisor has been incredibly rewarding, and leveraging the power of
+                    ChatGPT-4 has significantly accelerated the process. From defining MVP functional requisites to
+                    implementing core features and planning for scalability, GPT-4 has been an invaluable tool. As I
+                    continue to develop and refine MyAdvisor, I’m excited about the possibilities and the positive
+                    impact it will have on both users and financial advisors.</p>
+                <p>Thank you for joining me on this journey. Stay tuned for more updates and insights as MyAdvisor
+                    evolves. If you have any questions or suggestions, feel free to reach out!</p>
             </section>
         </div>
     </main>
