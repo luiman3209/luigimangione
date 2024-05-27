@@ -1,64 +1,243 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('assets/fonts/SF-Pro-Display-Regular.otf') format('truetype'),
+        url('assets/fonts/SF-Pro-Display-Italic.otf') format('truetype'),
+        url('assets/fonts/SF-Pro-Display-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'SF Pro', 'Segoe UI', Inter, Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    overflow: hidden;
+    padding: 10px;
 }
 
 /* Header Styles */
 header {
-    background-color: purple;
+    background-color: #4a4a4aae;
     color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /* Added height to ensure vertical centering */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+header .header-left .logo {
+    width: 90px;
+    height: auto;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .header-right nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header .header-right nav ul li {
+    margin-left: 20px;
+}
+
+header .resume-button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 8px 16px;
     text-align: center;
-    padding: 20px 0;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .resume-button a {
+    color: white;
+    text-decoration: none;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 header p {
-    margin: 5px 0;
+    font-size: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Main Content Styles */
 main {
-    padding: 20px 0;
+    padding: 60px 0 10px 0;
 }
 
 section {
-    margin-bottom: 20px;
-    background: #ffffff;
+    margin-bottom: 40px;
+    background: white;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: purple;
+/* Welcome Section Styles */
+#welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background: #f8f9fa;
+    text-align: left;
+}
+
+#welcome h1 {
+    font-size: 3rem;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+#welcome h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+#welcome p {
+    font-size: 1.5rem;
+    color: #333;
+    max-width: 600px;
+}
+
+/* About Section Styles */
+#about h2 {
+    color: #4a4a4a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Experience Section Styles */
+#experience h2 {
+    color: #4a4a4a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #e9ecef;
+    border-left: #007BFF 5px solid;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.job p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.job ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.job ul li {
+    margin-bottom: 10px;
+    color: #333;
 }
 
 /* Blog Post Styles */
 .post {
     margin-bottom: 20px;
     padding: 20px;
-    background: #e4e4e4;
-    border-left: purple 10px solid;
+    background: #e9ecef;
+    border-left: #4a4a4a 5px solid;
+    border-radius: 4px;
+}
+
+.post h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.post p {
+    margin: 10px 0;
+}
+
+.post a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
 }
 
 /* Footer Styles */
 footer {
-    background-color: purple;
+    background-color: #00000077;
     color: white;
     text-align: center;
-    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -66,10 +245,52 @@ footer {
 
 /* Link Styles */
 a {
-    color: purple;
+    color: #4a4a4a;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+
+/* Contact Section Styles */
+#contact {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    color: #4a4a4a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+.contact-list i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #4a4a4a;
 }

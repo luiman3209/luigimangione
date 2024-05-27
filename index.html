@@ -1,108 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luigi - Software Engineer & App Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            overflow: hidden;
-        }
-
-        header {
-            background-color: purple;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        header p {
-            margin: 5px 0;
-        }
-
-        main {
-            padding: 20px 0;
-        }
-
-        section {
-            margin-bottom: 20px;
-            background: #ffffff;
-            padding: 20px;
-        }
-
-        h2 {
-            color: purple;
-        }
-
-        .post {
-            margin-bottom: 20px;
-            padding: 20px;
-            background: #e4e4e4;
-            border-left: purple 10px solid;
-        }
-
-        footer {
-            background-color: purple;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1>Luigi</h1>
-            <p>Software Engineer & App Developer</p>
+            <div class="header-left">
+                <img src="assets/img/white-logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#posts">Posts</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><button class="resume-button"><a href="./assets/files/luigi_mangione_cv.pdf" target="_blank"
+                                    download="luigi_mangione_cv.pdf">Resume</a></button></li>
+
+
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
         <div class="container">
-            <section id="description">
+            <section id="welcome">
+                <p>Hello! I'm</p>
+                <h2>Luigi Mangione</h2>
+                <h2>I build things and share knowledge about programming</h2>
+            </section>
+
+            <section id="about">
                 <h2>About Me</h2>
-                <p>Hello! I'm a passionate software engineer and app developer with a keen interest in creating innovative solutions. I have experience in various programming languages and frameworks, and I enjoy solving complex problems with elegant solutions. In my free time, I like to write about technology and share my knowledge with others through blog posts.</p>
+                <p>Hi there! I&apos;m a software developer with a passion for web and app development.
+                    I love diving into new technologies and finding the best solutions to make digital
+                    experiences smoother and more enjoyable. My goal is to transform complex problems
+                    into easy-to-use applications that people love. I&apos;m always learning and experimenting
+                    with new tools to stay ahead in this fast-paced industry. When I&apos;m not coding,
+                    you&apos;ll find me exploring tech blogs or brainstorming with fellow tech enthusiasts.
+                    Let&apos;s connect and create something amazing together!</p>
             </section>
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>You can reach me at luigi@example.com</p>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Backend Developer</h3>
+                    <p><strong>Jakala, Rome, IT</strong></p>
+                    <p><em>March 2023 - Present</em></p>
+                    <ul>
+                        <li>Responsible for designing and implementing APIs within the Technology Engagement Delivery
+                            Solutions area.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Full-Stack Developer</h3>
+                    <p><strong>Exprivia, Rome, IT</strong></p>
+                    <p><em>May 2022 - March 2023</em></p>
+                    <ul>
+                        <li>Developed and maintained code for in-house and client websites.</li>
+                        <li>Worked with a huge amount of financial data.</li>
+                        <li>Manually tested applications for quality assurance.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Developer Researcher</h3>
+                    <p><strong>Exprivia, Molfetta, IT</strong></p>
+                    <p><em>November 2021 - April 2022</em></p>
+                    <ul>
+                        <li>Developed from scratch a web application for real-time action recognition using the CTR-GCN
+                            method after training the model on the NTURGB-D dataset.</li>
+                        <li>Produced my graduation thesis about the experimentation of the method.</li>
+                    </ul>
+                </div>
             </section>
 
-            <section id="blog">
+            <section id="posts">
                 <h2>Recent Blog Posts</h2>
                 <div class="post">
                     <h3><a href="post1.html">Post Title 1</a></h3>
                     <p>Date: January 1, 2024</p>
-                    <p>This is a summary of the first blog post. It provides an overview of the topic discussed and invites readers to read more.</p>
+                    <p>This is a summary of the first blog post. It provides an overview of the topic discussed and
+                        invites readers to read more.</p>
                 </div>
                 <div class="post">
                     <h3><a href="post2.html">Post Title 2</a></h3>
                     <p>Date: February 1, 2024</p>
-                    <p>This is a summary of the second blog post. It provides an overview of the topic discussed and invites readers to read more.</p>
+                    <p>This is a summary of the second blog post. It provides an overview of the topic discussed and
+                        invites readers to read more.</p>
                 </div>
                 <!-- Add more blog posts as needed -->
             </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <a href="mailto:luigimangione320@gmail.com">
+                            <i class="fas fa-envelope"></i> mailto:luigimangione320@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/luigi-mangione-6490b6150" target="_blank">
+                            <i class="fab fa-linkedin"></i> linkedin.com/in/luigi-mangione
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/luiman3209" target="_blank">
+                            <i class="fab fa-github"></i> github.com/luiman3209
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
         </div>
     </main>
 
@@ -112,4 +134,5 @@
         </div>
     </footer>
 </body>
+
 </html>
