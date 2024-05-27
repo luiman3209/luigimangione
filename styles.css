@@ -176,11 +176,18 @@ section {
     margin-bottom: 20px;
 }
 
+/* Experience Section Styles */
+#posts h2 {
+    color: #4a4a4a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 .job {
     margin-bottom: 20px;
     padding: 20px;
     background: #e9ecef;
-    border-left: #007BFF 5px solid;
+    border-left: #4a4a4a 5px solid;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
